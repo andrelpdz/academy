@@ -20,5 +20,8 @@ Templates prontos para criação de documentos como:
 # Como contribuir?
 Estamos abertos a sugestões e colaborações! Confira as diretrizes no arquivo CONTRIBUTING.md e envie suas ideias, feedbacks ou pull requests.
 
+# Veja um modelo
+Link: https://guia.dev/pt/pillars/software-architecture/technical-documentation.html
+
 # Sobre o ALPDZ Academy
 Este projeto foi idealizado por André LPDZ, instrutor com mais de 13 anos de experiência no ensino de tecnologia pelo Senac e criador do ALPDZ Academy, que produz conteúdo educacional sobre ferramentas como Excel, programação e muito mais.
