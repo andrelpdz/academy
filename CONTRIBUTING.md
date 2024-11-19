@@ -1,7 +1,7 @@
-#Contribuindo para o Projeto
+#-> Contribuindo para o Projeto
 Obrigado por considerar contribuir para o repositório Documentação Técnica para Desenvolvimento de Software! Abaixo, você encontrará orientações para garantir que seu trabalho seja eficiente e alinhado com os objetivos do projeto.
 
-#Como posso contribuir?
+#-> Como posso contribuir?
 1. Relatar problemas (Issues)
 Se você encontrar um problema, como um erro ou algo que pode ser melhorado:
 
@@ -32,12 +32,12 @@ Submeta seu pull request, explicando:
 O que foi alterado e por quê.
 Quais problemas a alteração resolve.
 
-#Diretrizes de estilo
+#-> Diretrizes de estilo
 Use uma linguagem clara e objetiva.
 Mantenha os documentos técnicos bem estruturados.
 No código, siga o guia de estilo da linguagem/tecnologia utilizada.
 
-#Revisão e aprovação
+#-> Revisão e aprovação
 Todas as contribuições serão revisadas antes de serem integradas ao projeto. Certifique-se de que seu pull request esteja completo e em conformidade com as diretrizes.
 
 Obrigado por ajudar a melhorar este projeto!
