@@ -1,0 +1,219 @@
+<!-- Tags e Atributos -->
+<img src="imagem.jpg" alt="Descrição da imagem">
+<!--As tags HTML seguem um formato básico -->
+<tag atributo="valor">Conteúdo</tag>
+<!-- Exemplo de tag com abertura e fechamento: -->
+<p>Isso é um parágrafo.</p>
+<!-- Exemplo de tag vazia/autônoma -->
+<img src="logo.png" alt="Logotipo">
+
+
+<!--
+###########################
+##### MODELO DE HTML ######
+###########################
+-->
+
+<!DOCTYPE html>  <!-- Define o tipo de documento -->
+<html>  <!-- Início da estrutura HTML -->
+<head>  <!-- Informações da página -->
+    <title>Meu Site</title>
+</head>
+<body>  <!-- Conteúdo visível da página -->
+    <header> <!-- Cabeçalho da página -->
+        <h1>Bem-vindo ao meu site</h1>
+    </header>
+    <main> <!-- Conteúdo principal -->
+        <p>Esse é um exemplo de página HTML.</p>
+    </main>
+    <footer> <!-- Rodapé da página -->
+        <p>© 2025 Meu Site</p>
+    </footer>
+</body>
+</html>
+
+
+<!--
+###########################
+##### PRINCIPAIS TAGS #####
+###########################
+-->
+
+<!-- Tags de Texto -->
+<h1>Título Principal</h1>  <!-- Título de nível 1 -->
+<h2>Subtítulo</h2>  <!-- Título de nível 2 -->
+<p>Esse é um parágrafo de texto.</p>  <!-- Parágrafo -->
+<strong>Texto em negrito</strong>  <!-- Texto em destaque -->
+<em>Texto em itálico</em>  <!-- Texto em itálico -->
+
+<!-- Tags de Links e Navegação -->
+<a href="https://www.exemplo.com">Clique aqui</a>  <!-- Link para outra página -->
+<nav>  <!-- Menu de navegação -->
+    <ul>
+        <li><a href="home.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+    </ul>
+</nav>
+
+<!-- Tags de Imagem e Mídia -->
+<img src="foto.jpg" alt="Imagem de exemplo">  <!-- Exibe uma imagem -->
+<video controls>
+    <source src="video.mp4" type="video/mp4">
+</video>  <!-- Exibe um vídeo -->
+
+<!-- Tags de Lista -->
+<ul>  <!-- Lista não ordenada -->
+    <li>Item 1</li>
+    <li>Item 2</li>
+</ul>
+<ol>  <!-- Lista ordenada -->
+    <li>Passo 1</li>
+    <li>Passo 2</li>
+</ol>
+
+<!-- Tags de Tabela -->
+<table border="1">
+    <tr>
+        <th>Nome</th> <th>Idade</th>  <!-- Cabeçalho da tabela -->
+    </tr>
+    <tr>
+        <td>João</td> <td>25</td>  <!-- Linha da tabela -->
+    </tr>
+</table>
+
+<!-- Tags de Formulário -->
+<form action="processa.php" method="post">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome">
+    <input type="submit" value="Enviar">
+</form>
+
+
+<!--
+###########################
+####### PRINCIPAIS ########
+####### ATRIBUTOS #########
+###########################
+-->
+
+<!--🔹 id → Define um identificador único para um elemento.-->
+<p id="paragrafo1">Esse é um parágrafo único.</p>
+<!--🔹 class → Agrupa elementos com características semelhantes, útil para CSS e JavaScript.-->
+<p class="texto-destaque">Texto com destaque.</p>
+<!--🔹 src → Define a origem de arquivos como imagens, vídeos ou scripts.-->
+<img src="logo.png" alt="Logo da empresa">
+<!--🔹 alt → Fornece um texto alternativo para imagens (importante para acessibilidade).-->
+<img src="foto.jpg" alt="Foto de uma paisagem">
+<!--🔹 href → Define o destino de links.-->
+<a href="https://www.google.com">Acesse o Google</a>
+<!--🔹 target → Controla como um link será aberto.-->
+<a href="https://exemplo.com" target="_blank">Abrir em nova aba</a>
+<!--🔹 type → Especifica o tipo de input em formulários.-->
+<input type="email" name="email">
+<!--🔹 placeholder → Mostra um texto temporário em inputs.-->
+<input type="text" placeholder="Digite seu nome">
+<!--🔹 disabled → Desativa um campo de formulário.-->
+<input type="text" disabled>
+<!--🔹 readonly → Torna um campo somente leitura.-->
+<input type="text" value="Somente leitura" readonly>
+
+
+<!--
+###########################
+####### FORMULÁRIOS #######
+###########################
+-->
+
+<form action="processa.php" method="post">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required>
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="mensagem">Mensagem:</label>
+    <textarea id="mensagem" name="mensagem"></textarea>
+
+    <input type="submit" value="Enviar">
+</form>
+
+
+<!-- Campos de Entrada de Dados -->
+
+<!--🔹 Texto (input type="text")-->
+<input type="text" name="nome" placeholder="Digite seu nome">
+<!--🔹 Email (input type="email")-->
+<input type="email" name="email" placeholder="Digite seu e-mail">
+<!--🔹 Senha (input type="password")-->
+<input type="password" name="senha">
+<!--🔹 Número (input type="number")-->
+<input type="number" name="idade" min="1" max="100">
+<!--🔹 Data (input type="date")-->
+<input type="date" name="data_nascimento">
+<!--🔹 Hora (input type="time")-->
+<input type="time" name="horario">
+<!--🔹 Telefone (input type="tel")-->
+<input type="tel" name="telefone" placeholder="(XX) XXXXX-XXXX">
+<!--🔹 URL (input type="url")-->
+<input type="url" name="website" placeholder="Digite seu site">
+
+
+<!-- Campos de Seleção e Escolha -->
+
+<!--🔹 Caixas de Seleção (Checkbox)-->
+<input type="checkbox" id="newsletter" name="newsletter" value="sim">
+<label for="newsletter">Desejo receber novidades por e-mail</label>
+
+<!--🔹 Botões de Opção (Radio Buttons)-->
+<input type="radio" id="masculino" name="genero" value="masculino">
+<label for="masculino">Masculino</label>
+<input type="radio" id="feminino" name="genero" value="feminino">
+<label for="feminino">Feminino</label>
+
+<!--🔹 Lista Suspensa (Select/Dropdown)-->
+<select name="cidade">
+    <option value="sp">São Paulo</option>
+    <option value="rj">Rio de Janeiro</option>
+    <option value="mg">Minas Gerais</option>
+</select>
+
+<!-- Botões -->
+
+<!--🔹 Botão de Envio (Submit)-->
+<input type="submit" value="Enviar">
+<!--🔹 Botão de Limpar (Reset)-->
+<input type="reset" value="Limpar">
+<!--🔹 Botão Genérico (Button)-->
+<button type="button" onclick="alert('Botão clicado!')">Clique Aqui</button>
+
+
+<!-- Atributos Importantes para Formulários -->
+
+<!--🔹 Obrigatório (required)-->
+<input type="text" name="nome" required>
+<!--🔹 Texto de Sugestão (placeholder)-->
+<input type="email" name="email" placeholder="Digite seu e-mail">
+<!--🔹 Valor Padrão (value)-->
+<input type="text" name="pais" value="Brasil">
+<!--🔹 Campo Somente Leitura (readonly)-->
+<input type="text" name="codigo" value="12345" readonly>
+<!--🔹 Campo Desativado (disabled)-->
+<input type="text" name="endereco" value="Indisponível" disabled>
+<!--🔹 Tamanho Máximo (maxlength)-->
+<input type="text" name="cep" maxlength="8">
+<!--🔹 Padrão de Entrada (pattern)-->
+<input type="text" name="cep" pattern="[0-9]{5}-[0-9]{3}" placeholder="XXXXX-XXX">
+
+
+<!--
+###########################
+##### SEO e METADADOS #####
+###########################
+-->
+
+<meta name="description" content="Descrição da página"> <!-- Descrição do conteúdo da página.-->
+<meta name="keywords" content="palavras-chave, exemplo, seo"> <!-- Palavras-chave relacionadas ao conteúdo.-->
+<title> <!-- Define o título da página exibido na aba do navegador.-->
+
+<!-- Acessibilidade -->
+<img src="imagem.jpg" alt="Descrição da imagem para deficientes visuais">
