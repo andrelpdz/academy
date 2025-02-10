@@ -1,0 +1,49 @@
+<style>
+/*-> SELETORES */
+p {
+  font-size: 16px;
+}
+
+.meuTexto {
+  color: red;
+}
+
+#menu {
+  background-color: #333;
+}
+
+/*-> SELETORES AVANÇADOS */
+
+/* SELETORES DE ATRIBUTOS: Seleciona elementos com um determinado atributo */
+input[type="text"] {
+  border: 1px solid #ccc;
+}
+
+/* SELETORES DE PSEUDO-CLASSE: Seleciona elementos em um estado específico */
+a:hover {
+  color: red;
+}
+</style>
+
+<!-- Atributos e Níveis de Acesso: Link, Tag, Import e !important. -->
+<!-- Link: Usado para vincular arquivos CSS externos. -->
+<link rel="stylesheet" href="styles.css">
+
+<!-- Tag: Pode ser usado para definir estilos diretamente dentro do documento HTML utilizando a tag <style> -->
+<style>
+  body {
+    background-color: lightgray;
+  }
+</style>
+
+<!-- Import: Permite importar outros arquivos CSS dentro de um arquivo CSS. -->
+<style>
+  @import url('outro-estilo.css');
+</style>
+
+<!-- !important: Força a aplicação de um estilo, independentemente de sua especificidade. -->
+<style>
+  p {
+    color: blue !important;
+  }
+</style>
