@@ -1,0 +1,57 @@
+<!-- EBOOK: https://andrelpdz.com.br/academy/frontend/ -->
+<!-- CODEPEN: https://codepen.io/Andre-LPDZ/pen/VYwZEwv -->
+
+<!-- # BOX MODEL # -->
+<!-- Neste exemplo, a largura total do elemento será 200px (width)
+     + 20px (padding à esquerda) + 20px (padding à direita)
+     + 5px (border à esquerda) + 5px (border à direita),
+     o que resulta em uma largura total de 250px. -->
+<style>
+  div.d1 {
+    width: 200px;
+    padding: 20px;
+    border: 5px solid black;
+    margin: 10px;
+  }
+</style>
+<div class="d1">D1</div>
+
+<!-- # VARIÁVEIS # -->
+<style>
+  :root {
+    --cor-principal: #3498db;
+  }
+  
+  div.d2 {
+    background-color: var(--cor-principal);
+  }
+</style>
+<div class="d2">D2</div>
+
+<!-- FUNÇÕES: Calc, Max, Min -->
+<!-- calc(): Permite calcular valores, como a soma ou subtração de unidades diferentes. -->
+<style>
+  div.d3 {
+    width: calc(100% - 20px);
+    background-color: #eee;
+  }
+</style>
+<div class="d3">D3</div>
+
+<!-- max(): Retorna o valor máximo entre dois ou mais valores. -->
+<style>
+  div.d4 {
+    width: max(300px, 50%);
+    background-color: #ccc;
+  }
+</style>
+<div class="d4">D4</div>
+
+<!-- min(): Retorna o valor mínimo entre dois ou mais valores. -->
+<style>
+  div.d5 {
+    width: min(500px, 80%);
+    background-color: #aaa;
+  }
+</style>
+<div class="d5">D5</div>
