@@ -180,6 +180,8 @@ function gameLoop(){
 
         elEstrela.innerHTML += '<span style="top:'+posy+'px; left:'+posx+'px; opacity:'+opac+';"></span>';
     }
+
+    setTimeout('gameLoop',50);
 }
 
 gameLoop();
