@@ -173,10 +173,10 @@ function gameLoop(){
     elInimigo.innerHTML = '';
 
     //-> Move Estrelas
-    for(let i=0; i<elEstrela.length; i++){
-        let posy = elEstrela[i][1] += 4;
-        let posx = elEstrela[i][0];
-        let opac = elEstrela[i][2];
+    for(let i=0; i<estrela.length; i++){
+        let posy = estrela[i][1] += 4;
+        let posx = estrela[i][0];
+        let opac = estrela[i][2];
 
         elEstrela.innerHTML = '<span style="top:'+posy+'px; left:'+posx+'px; opacity:'+opac+';"></span>';
     }
