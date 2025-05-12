@@ -1,47 +1,132 @@
 <html>
 <head>
-    <meta>
-    <meta>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         html,body{
             margin:0;
             overflow: hidden;
+            background-color:#e94b00;
         }
 
-        #board{}
-            #vida{}
-            #fase{}
-            #pontos{}
+        #board{
+            display:block;
+            text-align:center;
+        }
+            #board span{
+                position:relative;
+                display:inline-block;
+                width:110px;
+                line-height:40px;
+                font-size:18px;
+                color:#fff;
+                text-align:center;
+                margin:5px 10px;
+                background-image:url('https://andrelpdz.com.br/games/ZeroSpace/box.png');
+                background-repeat:no-repeat;
+                background-size:100% 100%;
+            }
 
-        #estrelas span{}
+        #estrelas span{
+            position:absolute;
+            display:block;
+            width:18px;
+            height:18px;
+            background-color:#ee6600;
+        }
         
-        #meteoro span{}
+        #inimigo span{
+            position:absolute;
+            display:block;
+            width:40px;
+            height:40px;
+            background-image:url('https://andrelpdz.com.br/games/ZeroSpace/meteoro.png');
+            background-repeat:no-repeat;
+            background-size:100% 100%;
+        }
 
-        #bullet{}
+        #bullet{
+            position:absolute;
+            display:block;
+            width:6px;
+            height:20px;
+            border-radius:50% 50% 0 0;
+            background:#FFcc00;
+            box-shadow:inset 0 0 3px 0 #333, 0 1px 2px 0 #000;
+        }
 
-        #player{}
+        #player{
+            position:absolute;
+            display:block;
+            width:50px;
+            height:72px;
+            top:calc(100vh - 200px);
+            left:50vw;
+            background-image:url('https://andrelpdz.com.br/games/ZeroSpace/nave.png');
+            background-size:100%;
+            animation: fogo 1s infinite alternate;
+        }
 
-        #control{}
+        #controle{
+            position:absolute;
+            display:block;
+            width:100%;
+            bottom:10px;
+        }
 
-        #control span{}
-            span#btEsq{}
-            span#btDir{}
-            span#btPow{}
+        #controle span{
+            position:absolute;
+            display:block;
+            width:70px;
+            height:70px;
+            bottom:10px;
+            background:transparent;
+        }
+            #controle #esq{
+                left:10px;
+                background-image:url('https://andrelpdz.com.br/games/ZeroSpace/btEsq.png');
+                background-size:100% 100%;
+            }
 
+            #controle #dir{
+                left: 90px;
+                background-image:url('https://andrelpdz.com.br/games/ZeroSpace/btDir.png?v=1');
+                background-size:100% 100%;
+            }
+
+            #controle #pow{
+                right: 10px;
+                background-image:url('https://andrelpdz.com.br/games/ZeroSpace/btPow.png');
+                background-size:100% 100%;
+            }
+
+            #controle #esq:hover, #controle #pow:hover, #controle #pow:hover{
+                background-size:100% 105%;
+            }
+
+            @keyframes fogo {
+                000% {height:72px;}
+                010% {height:56px;}
+                020% {height:72px;}
+                050% {height:56px;}
+                055% {height:72px;}
+                070% {height:56px;}
+                100% {height:72px;}
+            }
     </style>
 </head>
 <body>
     <span id="board">
-        <span id="vida"></span>
-        <span id="fase"></span>
-        <span id="pontos"></span>
+        <span id="vida">Vidas: 3</span>
+        <span id="fase">Fase: 1</span>
+        <span id="pontos">Pontos: 0</span>
     </span>
 
     <span id="estrelas">
         <span></span>
     </span>
 
-    <span id="meteoro">
+    <span id="inimigo">
         <span></span>
     </span>
 
@@ -49,7 +134,7 @@
 
     <span id="player"></span>
 
-    <span id="control">
+    <span id="controle">
         <span id="btEsq"></span>
         <span id="btDir"></span>
         <span id="btPow"></span>
