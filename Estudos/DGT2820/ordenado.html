@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordenação de Valores</title>
+    <script src="ordenando.js"></script>
+</head>
+<body>
+    <h1>Ordenação de Valores</h1>
+    <input type="number" id="valor" placeholder="Digite um número">
+    <button onclick="add()">Adicionar</button>
+    <hr>
+    <select id="algoritmo">
+        <option value="bubble">Bubble Sort</option>
+        <option value="selection">Selection Sort</option>
+        <option value="quick">Quick Sort</option>
+    </select>
+    <button onclick="ordenar()">Ordenar</button>
+    <button onclick="misturar()">Misturar</button>
+    <hr>
+    <h2>Lista de Valores:</h2>
+    <ul id="valores"></ul>
+
+    <script>
+        function add() {
+            // a) Capturar o campo de entrada
+            const inputValor = document.getElementById('valor');
+            const valor = inputValor.value;
+            
+            if (valor === "") {
+                alert("Por favor, digite um valor.");
+                return;
+            }
+            // b) Capturar a lista com id valores
+            const listaValores = document.getElementById('valores');
+            // c) Criar uma variável node, com um elemento li definido via createElement
+            const node = document.createElement('li');
+            // d) Definir um nó de texto e incluí-lo como filho de node
+            const textNode = document.createTextNode(valor);
+            node.appendChild(textNode);
+            // e) Adicionar o elemento node à lista valores
+            listaValores.appendChild(node);
+            // Limpa o campo após adicionar
+            inputValor.value = '';
+            inputValor.focus();
+        }
+
+        function ordenar() {
+            // a) Capturar a lista de valores
+            const listaValores = document.getElementById('valores');
+            const selectAlgoritmo = document.getElementById('algoritmo');
+            // b) Obter os nós da lista e adicionar o conteúdo
+            const vetor = Array.from(listaValores.children)
+                // c) Obter via innerHTML e converter com eval
+                .map(item => eval(item.innerHTML)); 
+            // Se vazio, nao faz nada
+            if (vetor.length === 0) return;
+            // d) Escolher o algoritmo de ordenação adequado
+            const algoritmo = selectAlgoritmo.options[selectAlgoritmo.selectedIndex].value;
+            let vetorOrdenado;
+
+            switch(algoritmo) {
+                case 'bubble':
+                    vetorOrdenado = bubble_sort(vetor); break;
+                case 'selection':
+                    vetorOrdenado = selection_sort(vetor); break;
+                case 'quick':
+                    vetorOrdenado = quick_sort_start(vetor);  break;
+                default:
+                    return;
+            }
+
+            // e) Utilizar os operadores map e reduce
+            const novosItens = vetorOrdenado.map(valor => `<li>${valor}</li>`);
+            // Concatena todos os itens
+            const htmlLista = novosItens.reduce((acumulador, item) => acumulador + item, '');
+            // Substitui o conteúdo
+            listaValores.innerHTML = htmlLista;
+        }
+
+        function misturar() {
+            // a) Capturar a lista
+            const listaValores = document.getElementById('valores');
+            // b) Obter os nós da lista
+            const vetor = Array.from(listaValores.children)
+                // c) Obter via innerHTML
+                .map(item => eval(item.innerHTML));
+            // Se o vetor estiver vazio, não faz nada
+            if (vetor.length === 0) return;
+            // d) Aplicar a função shuffle
+            const vetorEmbaralhado = shuffle(vetor, 100);
+            // e) Utilizar os operadores map e reduce
+            const novosItens = vetorEmbaralhado.map(valor => `<li>${valor}</li>`);
+            const htmlLista = novosItens.reduce((acumulador, item) => acumulador + item, '');
+            // Substitui o conteúdo
+            listaValores.innerHTML = htmlLista;
+        }
+    </script>
+</body>
+</html>
