@@ -1,6 +1,8 @@
 # MVC Simples PHP
 
-Já viu o projeto Crud Simples PHP? SIM, então agora vamos subir o nível 👨‍💻🔥
+Já viu o projeto Crud Simples PHP?
+NÃO, então acesse aqui, [CRUD](../CRUD-Simples-PHP)
+SIM, então agora vamos subir o nível 👨‍💻🔥
 Mini framework MVC com PDO:
 ```
  ├── /Application
