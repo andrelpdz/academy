@@ -24,7 +24,7 @@ Você já tem a tabela, só ajuste para AUTO_INCREMENT:
 # ✅ Resultado
 Você terá um CRUD completo:
 
--✅ Criar gasto
--✅ Listar gastos
--✅ Editar gasto
--✅ Excluir gasto
+- ✅ Criar gasto
+- ✅ Listar gastos
+- ✅ Editar gasto
+- ✅ Excluir gasto
