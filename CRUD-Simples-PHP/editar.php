@@ -8,7 +8,7 @@ $result = $conn->query($sql);
 $row = $result->fetch_assoc();
 ?>
 
-atualizar.php
+<form action="atualizar.php" method="post">
     <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
     
     Item: <input type="text" name="item" value="<?php echo $row['item']; ?>">
