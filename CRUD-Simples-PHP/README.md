@@ -21,7 +21,7 @@ Você já tem a tabela, só ajuste para AUTO_INCREMENT:
 
 ❌ 7. Deletar (deletar.php)
 
-#✅ Resultado
+# ✅ Resultado
 Você terá um CRUD completo:
 
 -✅ Criar gasto
