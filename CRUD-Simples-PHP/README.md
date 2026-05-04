@@ -28,3 +28,5 @@ Você terá um CRUD completo:
 - ✅ Listar gastos
 - ✅ Editar gasto
 - ✅ Excluir gasto
+
+Gostou? avance um pouvo mais e vamos entender sobre MVC com PHP, [CRUD](../MVC-Simples-PHP)
