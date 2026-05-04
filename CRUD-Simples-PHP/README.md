@@ -1,4 +1,4 @@
-#PROJETO CRUD SIMPLES
+# PROJETO CRUD SIMPLES
 
 - HTML (formulário + listagem)
 - CSS (bem básico)
