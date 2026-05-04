@@ -1,10 +1,10 @@
 #PROJETO CRUD SIMPLES
 
--HTML (formulário + listagem)
--CSS (bem básico)
--JavaScript (opcional para confirmação)
--PHP (CRUD)
--MySQL
+- HTML (formulário + listagem)
+- CSS (bem básico)
+- JavaScript (opcional para confirmação)
+- PHP (CRUD)
+- MySQL
 
 🗄️ 1. Banco de Dados
 Você já tem a tabela, só ajuste para AUTO_INCREMENT:
