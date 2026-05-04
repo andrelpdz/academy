@@ -29,4 +29,4 @@ Você terá um CRUD completo:
 - ✅ Editar gasto
 - ✅ Excluir gasto
 
-Gostou? avance um pouvo mais e vamos entender sobre MVC com PHP, [CRUD](../MVC-Simples-PHP)
+Gostou? avance um pouvo mais e vamos entender sobre MVC com PHP, [MVC](../MVC-Simples-PHP)
