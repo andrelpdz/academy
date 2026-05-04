@@ -1,4 +1,6 @@
-<?php include("conexao.php"); ?>
+<?php    
+include("conexao.php");
+?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -25,7 +27,7 @@ function confirmar(id) {
 <body>
 
 <h2>Cadastrar gasto</h2>
-salvar.php
+<form action="salvar.php" method="post">
     Item: <input type="text" name="item" required>
     Valor: <input type="number" step="0.01" name="valor" required>
     <button type="submit">Salvar</button>
@@ -52,8 +54,8 @@ while($row = $result->fetch_assoc()) {
         <td>{$row['item']}</td>
         <td>R$ {$row['valor']}</td>
         <td>
-            editar.php?id={$row[ |
-            #
+            <a href='editar.php?id={$row['id']}'>Editar</a> |
+            <a href='#' onclick='confirmar({$row['id']})'>Excluir</a>
         </td>
     </tr>";
 }
